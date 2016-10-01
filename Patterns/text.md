@@ -9,6 +9,13 @@ O grupo pode (re)usar a estrutura de descrição presente no livro e resumir a
   - Uma classe pode implementar mais de uma interface.
   - Outras linguagens tem pequenas diferenças na implementação do conceito de interfaces. Em Swift por exemplo existem protocolos, que são interfaces onde também é possível declarar propriedades. 
 
+- Objeto Valor
+  - Quando vamos lidar com conceitos imutáveis podemos fazer deles um objeto que se comporta como um valor. Ou seja, uma classe que apresenta o mesmo comportamento que um Int ou Float. 
+  - Todos os campos são inicializados ao mesmo tempo e após a inicialização não mais serão alterados.
+  - A igualdade nesse caso não é dada pela instancia, mas sim pela igualdade de cada um dos campos.
+  - O objeto não possui estado, porém ele pode encapsular outros objetos que contém estado.
+  - Java e Python não possuem o conceito de Valor Objeto na sua forma pura, porém existem bibliotecas de terceiros para facilitar a implementação do padrão, apesar de não ser necessário.
+
 ### 4 padrões de estado, de comportamento e de método.
 - Guard (Comportamento) 
   - Usado em situações para desviar do fluxo comum.
