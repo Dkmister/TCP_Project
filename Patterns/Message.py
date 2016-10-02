@@ -14,9 +14,9 @@ class Message(object):
     _receiverID = None
     
     def __init__(self, sender, receiver, payload):
-        _payload = payload
-        _senderID = sender.id
-        _receiverID = receiver.id
+        self._payload = payload
+        self._senderID = sender.id
+        self._receiverID = receiver.id
         sender.serverDidReceiveMessage(self)
         receiver.sendMessage(self)
 
