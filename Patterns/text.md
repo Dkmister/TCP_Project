@@ -39,3 +39,8 @@ O grupo pode (re)usar a estrutura de descrição presente no livro e resumir a
   - Se existe mais de uma combinação de requisitos possíveis, devemos disponibilizar construtores para cada uma delas.
   - Eles permitem que deixemos claro quais propriedades devem ser populadas antes de usarmos um objeto, o que não aconteceria caso criassemos ele vazio e permitissimos que o usuário o populasse livremente.
   - Quando disponibilizando mais de um construtor, faça com que todos eles usem o mesmo construtor pai, isso garante que todas as variações respeitem os requisitos básicos comuns a elas.
+
+- Inicialização Tardia (Estado)
+  - Alguns campos ou objetos filhos de um outro objeto podem ter um custo muito grande de inicialização. Isso nos leva a propor que sua inicialização seja atrasada o máximo possível, talvez apenas quando alguém tentar acessá-la.
+  - O fato de que a inicialização da variável estará distante da declaração dificulta a leitura do código, mas passa a ideia de que performance é crucial nesse trecho.
+  - Essa separação também dificulta a programação, pois temos mais dificuldade em determinar se no ponto em que estamos ela estará ou não inicializada.
