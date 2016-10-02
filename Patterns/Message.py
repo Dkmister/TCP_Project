@@ -21,7 +21,6 @@ class Message(object):
         receiver.sendMessage(self)
 
     def __eq__(self, other):
-        print(self._payload + " " + other._payload)
         if (self._payload != other._payload):
             return False
         if (self._receiverID != other._receiverID):
