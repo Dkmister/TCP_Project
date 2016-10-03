@@ -27,18 +27,18 @@ O grupo pode (re)usar a estrutura de descrição presente no livro e resumir a
 
 - Nome refletindo intenção (Método)
   - Nomes dos métodos devem refletir a inteção de quem está chamando.
-  - Estratégias de implementação não devem constar no nome. Em casos raros a implementação pode saber sobre a implementação pode ser útil, devendo constar no nome.
-  - Nomes dos métodos devem ajudar a contar a história do código, pense sobre o contexto em que ele será chamado.
-  - Tente evitar prefixos nos nomes, cheque se está usando a metáfora correta antes.
-  - Como curiosidade incluimos um exemplo de um longo nome de método encontrado no framework UIKit da Apple: automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers, contendo 70 caracteres.
+  - Estratégias de implementação geralmente não devem constar no nome. Em casos raros, saber sobre a implementação pode ser útil, podendo ela, então, constar no nome.
+  - Nomes dos métodos devem ajudar a contar a história do código: pense sobre o contexto em que ele será chamado.
+  - Tente evitar prefixos nos nomes; cheque se está usando a metáfora correta antes.
+  - Como curiosidade, incluimos um exemplo de um longo nome de método encontrado no framework UIKit da Apple: automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers, contendo 70 caracteres.
 
 
 - Construtor Completo (Método)
   - Métodos Construtores são responsáveis por retornar objetos prontos para serem computados.
-  - Construtores devem expressar os requisitos básico que eles precisam para retornar tal objeto.
+  - Construtores devem expressar os requisitos básicos que eles precisam para retornar tal objeto.
   - Se existe mais de uma combinação de requisitos possíveis, devemos disponibilizar construtores para cada uma delas.
-  - Eles permitem que deixemos claro quais propriedades devem ser populadas antes de usarmos um objeto, o que não aconteceria caso criassemos ele vazio e permitissemos que o usuário o populasse livremente.
-  - Quando disponibilizando mais de um construtor, faça com que todos eles usem o mesmo construtor pai, isso garante que todas as variações respeitem os requisitos básicos comuns a elas.
+  - Eles permitem que deixemos claro quais propriedades devem ser populadas antes de usarmos um objeto, o que não aconteceria caso o criássemos vazio e permitíssemos que o usuário o populasse livremente.
+  - Quando disponibilizando mais de um construtor, faça com que todos eles usem o mesmo construtor pai, isso garante que todas as variações respeitarão os requisitos básicos comuns a elas.
 
 - Inicialização Tardia (Estado)
   - Alguns campos ou objetos filhos de um outro objeto podem ter um custo muito grande de inicialização. Isso nos leva a propor que sua inicialização seja atrasada o máximo possível, talvez apenas quando alguém tentar acessá-la.
