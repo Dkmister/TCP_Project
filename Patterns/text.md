@@ -4,10 +4,10 @@ O grupo pode (re)usar a estrutura de descrição presente no livro e resumir a
 ### 2 padrões de classe 
 - Interfaces
   - O uso de interfaces permite que o programador afirme que certa classe irá possuir certas capacidades. Sabendo que os métodos esperados estarão presentes os usuários dessas classes não precisam se preocupar em como foi implementada a solução.
-  - Este encapsulamento da implementação permite que mudanças posssam ser feitas sem adicionar trabalho aos diversos usuários da classe, minimiza o efeito colateral de mudanças na implementação.
-  - Em Java interfaces não podem incluir declarações de propriedades, assim como todos os métodos devem ser públicos.
+  - Este encapsulamento da implementação permite que mudanças possam ser feitas sem adicionar trabalho aos diversos usuários da classe, minimiza o efeito colateral de mudanças na implementação.
+  - Em Java, interfaces não podem incluir declarações de propriedades, assim como todos os métodos devem ser públicos.
   - Uma classe pode implementar mais de uma interface.
-  - Outras linguagens tem pequenas diferenças na implementação do conceito de interfaces. Em Swift por exemplo existem protocolos, que são interfaces onde também é possível declarar propriedades. 
+  - Outras linguagens tem pequenas diferenças na implementação do conceito de interfaces. Em Swift, por exemplo, existem protocolos, que são interfaces onde também é possível declarar propriedades. 
 
 - Objeto Valor
   - Quando vamos lidar com conceitos imutáveis podemos fazer deles um objeto que se comporta como um valor. Ou seja, uma classe que apresenta o mesmo comportamento que um Int ou Float. 
@@ -37,7 +37,7 @@ O grupo pode (re)usar a estrutura de descrição presente no livro e resumir a
   - Métodos Construtores são responsáveis por retornar objetos prontos para serem computados.
   - Construtores devem expressar os requisitos básico que eles precisam para retornar tal objeto.
   - Se existe mais de uma combinação de requisitos possíveis, devemos disponibilizar construtores para cada uma delas.
-  - Eles permitem que deixemos claro quais propriedades devem ser populadas antes de usarmos um objeto, o que não aconteceria caso criassemos ele vazio e permitissimos que o usuário o populasse livremente.
+  - Eles permitem que deixemos claro quais propriedades devem ser populadas antes de usarmos um objeto, o que não aconteceria caso criassemos ele vazio e permitissemos que o usuário o populasse livremente.
   - Quando disponibilizando mais de um construtor, faça com que todos eles usem o mesmo construtor pai, isso garante que todas as variações respeitem os requisitos básicos comuns a elas.
 
 - Inicialização Tardia (Estado)
