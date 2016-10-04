@@ -1,5 +1,10 @@
-# Parte II : Seleção e Descrição de 6 Padrões de Implementação
-O grupo pode (re)usar a estrutura de descrição presente no livro e resumir as características principais de cada padrão. Esta descrição deve ser feita visando a distribuição para os colegas de turma, de modo que todos se beneficiem de seu esforço.
+<p align="center">
+  <b>UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL</b><br>
+  <b>INSTITUTO DE INFORMÁTICA</b><br>
+  <b>INF01120-B</b><br>
+  <b>Prof. Marcelo Soares Pimenta</b><br>
+  <br>Padrões de Implementação<br>
+</p>
 
 ### 2 padrões de classe 
 - Interfaces
@@ -44,3 +49,42 @@ O grupo pode (re)usar a estrutura de descrição presente no livro e resumir a
   - Alguns campos ou objetos filhos de um outro objeto podem ter um custo muito grande de inicialização. Isso nos leva a propor que sua inicialização seja atrasada o máximo possível, talvez apenas quando alguém tentar acessá-la.
   - O fato de que a inicialização da variável estará distante da declaração dificulta a leitura do código, mas passa a ideia de que performance é crucial nesse trecho.
   - Essa separação também dificulta a programação, pois temos mais dificuldade em determinar se no ponto em que estamos ela estará ou não inicializada.
+
+
+### Exemplo de uso do padrão Objeto Valor
+
+```python
+class User(object):
+    def __init__(self, id):
+        self.id = id
+        
+    def sendMessage(self, message):
+        print("Mensagem encaminhada para o " + self.id)
+
+    def serverDidReceiveMessage(self, message):
+        print(self.id + " recebeu o aviso de que a mensagem chegou no servidor")
+
+class Message(object):
+    _payload = None
+    _senderID = None
+    _receiverID = None
+    
+    def __init__(self, sender, receiver, payload):
+        self._payload = payload
+        self._senderID = sender.id
+        self._receiverID = receiver.id
+        sender.serverDidReceiveMessage(self)
+        receiver.sendMessage(self)
+
+    def __eq__(self, other):
+        if (self._payload != other._payload):
+            return False
+        if (self._receiverID != other._receiverID):
+            return False
+        if (self._senderID != other._senderID):
+            return False
+        return True
+
+    def __ne__(self, other):
+        return not (self == other)
+```
