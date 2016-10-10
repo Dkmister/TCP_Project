@@ -9,17 +9,21 @@
 
 ## Projeto Funcional e Definição de Classes
 
-#### Partitura
+### Partitura
 
-#### TrechoDeSom
+#### Nota
+
+#### Tempo
+
+### TrechoDeSom
 
 ## Projeto de Interface do Usuário
 
-#### (interface Vilmar aqui)
+### (interface Vilmar aqui)
 
 ## Lista de Requisitos
 
-#### Funcionais
+### Funcionais
 
 - O programa deve permitir a digitação assim que aberto - como um editor de texto.
 - Antes de rodar a codificação para áudio pela primeira vez, deve oferecer a opção de salvar o texto digitado como .txt.
