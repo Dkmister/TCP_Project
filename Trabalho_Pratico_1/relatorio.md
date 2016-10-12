@@ -2,8 +2,14 @@
   <b>UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL</b><br>
   <b>INSTITUTO DE INFORMÁTICA</b><br>
   <b>INF01120-B</b><br>
-  <b>Prof. Marcelo Soares Pimenta</b><br>
+  <b>Prof. Marcelo Soares Pimenta</b><br><br>
+  <b>Grupo:</b><br>
+  <b>Germano Martinelli - 00216684</b><br>
+  <b>Pietro Degrazia - 00243666</b><br>
+  <b>Vilmar Neto - 00242276</b><br>
 </p>
+
+
 
 # Trabalho Prático - Fase 1
 
