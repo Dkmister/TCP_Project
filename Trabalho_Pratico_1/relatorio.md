@@ -26,7 +26,23 @@ Essa classe é mais baixo-nível. Ela é basicamente um buffer de som já proces
 
 ## Projeto de Interface do Usuário
 
-### (interface Vilmar aqui)
+### Menu
+Essa classe é responsável pela interface, da interação com o usuário, a partir de alguma seleção selecionada, esta classe irá interagir com as outras classes responsáveis pelas partes relativas as funcionalidades do programa.
+
+#### Métodos
+
+##### __init__
+Responsável pela mensagem de boas-vindas ao usuário e por inicializar a classe Menu.
+
+##### __menu__
+Responsável pela seleção de escolhas feita pelo usuário. São elas:
+
+1. Abrir um .txt para executar o áudio
+2. Escrever um texto e possibilitar salvar para futuramente digitar
+3. Sair do programa
+
+##### ___exit___
+Responsável pela mensagem de despedida ao usuário. Exibe ao fim do programa
 
 ## Lista de Requisitos
 
