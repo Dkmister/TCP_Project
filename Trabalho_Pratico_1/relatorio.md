@@ -10,12 +10,19 @@
 ## Projeto Funcional e Definição de Classes
 
 ### Partitura
+Essa é a principal classe do trabalho. Em alto nível, representa a interpretação musical de um trecho de texto, conforme a especificação inicial do trabalho.
 
 #### Nota
+Esse atributo trata as diferentes notas que o som pode assumir, assim como suas oitavas. Ainda resta a ser decidido como elas serão codificadas.
+
+#### Timbre
+Esse atributo existe para tratar as diferenças entre instrumentos. O timbre, a grosso modo, é a 'assinatura' de cada instrumento.
 
 #### Tempo
+Esse atributo trata o tempo, ou beat, do som.
 
 ### TrechoDeSom
+Essa classe é mais baixo-nível. Ela é basicamente um buffer de som já processado pelos algoritmos de conversão e pronto para ser tocado. O grupo concluiu que é melhor fazer toda a bufferização/renderização do som e só então tocar, para que a experiência do usuário seja a melhor possível.
 
 ## Projeto de Interface do Usuário
 
