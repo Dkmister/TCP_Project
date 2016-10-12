@@ -34,6 +34,8 @@ Essa classe é responsável pela interface, da interação com o usuário, a par
 ##### __init__
 Responsável pela mensagem de boas-vindas ao usuário e por inicializar a classe Menu.
 
+![Init](Menu_init.png?raw=true "Init")
+
 ##### __menu__
 Responsável pela seleção de escolhas feita pelo usuário. São elas:
 
@@ -41,8 +43,12 @@ Responsável pela seleção de escolhas feita pelo usuário. São elas:
 2. Escrever um texto e possibilitar salvar para futuramente digitar
 3. Sair do programa
 
+![Menu](Menu_selec.png?raw=true "Menu")
+
 ##### ___exit___
 Responsável pela mensagem de despedida ao usuário. Exibe ao fim do programa
+
+![Exit](Menu_exit.png?raw=true "Exit")
 
 ## Lista de Requisitos
 
