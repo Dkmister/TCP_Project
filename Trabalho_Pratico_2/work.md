@@ -1,8 +1,7 @@
 # Descrição do Programa
 
-a) O programa consiste em um software que irá receber entrada de comandos do usuário através do teclado e baseado em tais entradas tocará sons com notas, volume e batidas de acordo.
+O programa consiste em um software que irá receber entrada de comandos do usuário através do teclado e baseado em tais entradas tocará sons com notas, volume e batidas de acordo.
 
-b)
 ## Partitura 
 Classe que irá representar a música como um todo. Possui como atributo todo o texto que o usuário entrou para determinado arquivo. No futuro poderá possuir também uma lista ordenada de Notas e Tempos, provavelmente transformados em um objeto apenas do tipo Comando (padrão de implementação).
 
@@ -32,6 +31,6 @@ Por outro lado, a Partitura é bem especificamente desenhada para solucionar ess
 
 ## Decomposição - a divisão de tarefas 
 
-Em termos de decomposição, a composição do trabalho foi dividida na criação do software, interface gráfica, sendo acessível ao usuário final, e o processamento, a parte invisível ao usuário.
+Em termos de decomposição, a composição do trabalho foi dividida na criação do software: a interface gráfica é acessível ao usuário final, e o processamento, invisível a ele.
 
-Além de ser proposta uma visão de mais alto nível antes de chegar na programação do problema, que seria o mais baixo. Foi feita a definição dos objetos de acordo com a maior proximidade ao mundo real, consequentemente descendo o nível para chegar em código. 
+Além disso, a visão adotada foi top-down. Começou-se pela descrição em alto nível - linguagem humana, conceitos do mundo real - do problema, e então foi-se baixando o nível de abstração até se chegar em implementação de código em Python.
