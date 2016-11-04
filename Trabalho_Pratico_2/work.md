@@ -29,3 +29,9 @@ A TrechoDeSom é, talvez, a mais genérica delas - consiste em uma série de byt
 A Nota e o Tempo também contêm elementos bastante gerais, que podem ser tanto importados quanto exportados sem menores problemas, visto ambos serem conceitos universais do universo da Teoria Musical.
 
 Por outro lado, a Partitura é bem especificamente desenhada para solucionar esse exato problema. Começa-se pelo fato de que ela, em si, já é uma abstração sobre um conjunto de linhas de texto que poderiam ser tratadas, por si só, meramente como texto.
+
+## Decomposição - a divisão de tarefas 
+
+Em termos de decomposição, a composição do trabalho foi dividida na criação do software, interface gráfica, sendo acessível ao usuário final, e o processamento, a parte invisível ao usuário.
+
+Além de ser proposta uma visão de mais alto nível antes de chegar na programação do problema, que seria o mais baixo. Foi feita a definição dos objetos de acordo com a maior proximidade ao mundo real, consequentemente descendo o nível para chegar em código. 
