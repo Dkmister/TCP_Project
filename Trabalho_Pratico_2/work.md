@@ -26,4 +26,6 @@ Em termos de acoplamento, as classes foram pensadas de forma tão específica pa
 
 A TrechoDeSom é, talvez, a mais genérica delas - consiste em uma série de bytes em codificação .wav, que pode facilmente ser importada de uma biblioteca existente (que é o approach que o grupo planeja adotar) ou implementada e usada, sem modificações, por outra aplicação.
 
-Já, a Partitura é bem especificamente desenhada para solucionar esse exato problema. Começa-se pelo fato de que ela, em si, já é uma abstração sobre um conjunto de linhas de texto que poderiam ser tratadas, por si só, meramente como texto.
+A Nota e o Tempo também contêm elementos bastante gerais, que podem ser tanto importados quanto exportados sem menores problemas, visto ambos serem conceitos universais do universo da Teoria Musical.
+
+Por outro lado, a Partitura é bem especificamente desenhada para solucionar esse exato problema. Começa-se pelo fato de que ela, em si, já é uma abstração sobre um conjunto de linhas de texto que poderiam ser tratadas, por si só, meramente como texto.
