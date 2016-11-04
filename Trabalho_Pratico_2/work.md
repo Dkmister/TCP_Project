@@ -37,11 +37,11 @@ Além disso, a visão adotada foi top-down. Começou-se pela descrição em alto
 
 ## Unidades Modulares Linguísticas e Auto-documentação - a importante e não-trivial tarefa de fazer o código falar por si
 
-Duas das principais lições da Engenharia de Software são a noção de que o código é muito mais vezes lido do que escrito, e a de que vale a pena economizar alguns bits de memória ou nanossegundos de execução (que, com a tecnologia atual, hoje existem em abundância) para tornar o código mais facilmente legível e interpretável pelas mentes humanas que travarão contato com ele.
+Duas das principais lições da Engenharia de Software são a noção de que o código é muito mais vezes lido do que escrito, e a de que vale a pena economizar alguns bits de memória ou nanossegundos de execução (que, com a tecnologia atual, hoje existem em abundância) para tornar o código mais facilmente legível e interpretável pelas mentes humanas que terão contato com ele.
 
 Assim, o grupo pretende atentar especialmente para que a implementação seja bastante clara, priorizando a clareza linguística sobre a escovagem de bits. Para isso, os nomes das classes e dos métodos serão descritivos (padrão de implementação), mesmo que resultem longos (o que não é um grande problema com as IDEs de hoje e com o suporte de compiladores e interpretadores a strings longos). E, junto a isso, o grupo buscará codificar de forma a tornar clara a lógica, na medida do possível, até a alguém leigo. Essa é uma métrica exigente e, ainda que inatingível na prática, é uma boa heurística a se adotar.
 
 
 ## Propostas de Soluções
 
-Tendo em vista o propósito específico da aplicação, podemos tentar melhorar a modularidade trocando comunicação entre classes hoje feitas com acesso direto por acesso indireto, através de métodos declarados em interfaces. Isso por um lado adiciona complexidade no código inicialmente, mas compensa com maior liberdade na hora de dar manutenção e alterar estratégias de implementação em cada classe.
+Tendo em vista o propósito específico da aplicação, podemos tentar melhorar a modularidade trocando comunicação entre classes, hoje feitas com acesso direto por acesso indireto, através de métodos declarados em interfaces. Isso por um lado adiciona complexidade no código inicialmente, mas compensa com maior liberdade na hora de dar manutenção e alterar estratégias de implementação em cada classe.
