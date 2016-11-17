@@ -1,0 +1,15 @@
+WELCOME = "Bem Vindo ao Processador de texto para audio"
+SOFTWARE_TITLE = "Processador de texto para audio"
+CHOOSE_OPTION = "Escolha uma opcao"
+TXT_TO_AUDIO = "Gerar Audio"
+WRITE_TEXT = "Write a text"
+QUIT = "Exit"
+BYE = "Farewell"
+UNSAVED = "Nao salvo"
+
+
+NEW_FILE = "Novo"
+OPEN_FILE = "Abrir"
+EDIT_FILE = "Editar"
+PLAY_AUDIO = "Tocar"
+EXPORT_AUDIO = "Exportar"
